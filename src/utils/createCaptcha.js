@@ -7,7 +7,7 @@ export default function( num = 6, letters = 'QWERTYUIOPLKJHGFDSAZXCVBNM123456789
 	} catch (e) {}
 
 	captcha.forEach(item => {
-		tpl += `<span class="flexl hcenter">${item}</span>`
+		tpl += `<span class="flex1 hcenter">${item}</span>`
 	})
 
 	captcha = captcha.join('')

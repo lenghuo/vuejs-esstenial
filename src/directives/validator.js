@@ -16,7 +16,7 @@ function validate(el, modifiers, bindingValue) {
 	} else if (bindingValue.regex) {
 		try {
 			if (!bindingValue.regex.test(value)) {
-				defaultError = `${title}格式不匹配`
+				defaultError = `${title}格式不正确`
 			}
 		} catch (e) {}
 	}
