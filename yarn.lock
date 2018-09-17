@@ -5539,6 +5539,10 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
+sweetalert2@7.15.1:
+  version "7.15.1"
+  resolved "http://registry.npm.taobao.org/sweetalert2/download/sweetalert2-7.15.1.tgz#edd9bd4d5501b22e18755686a343c7afe3e9adb2"
+
 tapable@^0.2.7:
   version "0.2.8"
   resolved "http://r.cnpmjs.org/tapable/download/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
@@ -5906,6 +5910,10 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.2:
   version "2.5.16"
   resolved "http://r.cnpmjs.org/vue/download/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
+
+vuex@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/vuex/download/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
 
 watchpack@^1.4.0:
   version "1.6.0"
