@@ -17,5 +17,17 @@ export default [
     path: '/auth/login',
     name: 'Login',
     component: () => import('@/view/auth/Login')
+  },
+  {
+    path: '/users/1/edit',
+    component: () => import('@/view/users/Edit.vue'),
+    children: [
+      {
+        path: '',
+        name: 'EditProfile',
+        component: () => import('@/view/users/Profile.vue'),
+        meta: { auth: true }
+      }
+    ]
   }
 ]
