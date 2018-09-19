@@ -25,19 +25,19 @@
             <label class="col-sm-2 control-label">兴趣</label>
             <div class="col-sm-6">
               <label class="checkbox-inline">
-                <input v-model="hobbies" value="泡网" type="checkbox">泡网
+                <input v-model="hobbies" value="泡网" type="checkbox"> 泡网
               </label>
               <label class="checkbox-inline">
-                <input v-model="hobbies" value="运动" type="checkbox">运动
+                <input v-model="hobbies" value="运动" type="checkbox"> 运动
               </label>
               <label class="checkbox-inline">
-                <input v-model="hobbies" value="健身" type="checkbox">健身
+                <input v-model="hobbies" value="健身" type="checkbox"> 健身
               </label>
               <label class="checkbox-inline">
-                <input v-model="hobbies" value="旅游" type="checkbox">旅游
+                <input v-model="hobbies" value="旅游" type="checkbox"> 旅游
               </label>
               <label class="checkbox-inline">
-                <input v-model="hobbies" value="游戏" type="checkbox">游戏
+                <input v-model="hobbies" value="游戏" type="checkbox"> 游戏
               </label>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default {
     return {
       username: '',
       sex: '',
-      hobbies: '', // 兴趣
+      hobbies: [], // 兴趣
       introduction: ''
     }
   },
@@ -91,7 +91,8 @@ export default {
             hobbies: this.hobbies,
             introduction: this.introduction
           })
-          alert('修改成功')
+          // alert('修改成功')
+          this.$message.show('修改成功')
         }
       })
     }

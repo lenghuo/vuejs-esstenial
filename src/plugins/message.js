@@ -14,7 +14,7 @@ export default {
       vm.show = value
     })
 
-    const Message = {
+    const message = {
       show(msg = '', type = 'success') {
         vm.msg = msg
         vm.type = type
@@ -23,8 +23,13 @@ export default {
         Vue.nextTick(() => {
           vm.show = true
         })
+      },
+      hide() {
+        Vue.nextTick(() => {
+          vm.show = false
+        })
       }
     }
-    Vue.prototype.$message = Message
+    Vue.prototype.$message = message
   }
 }
